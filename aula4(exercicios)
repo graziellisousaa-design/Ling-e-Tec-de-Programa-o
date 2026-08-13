@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
 	segundo = aux;
 	printf("%d \n %d \n", primeiro, segundo);
 	//notação cientifica (2)
-	float valor, binario, sf, vt, total;
+	float valor, binario, sf, vt, total, a, b, c, d, idade, soma, media, produtorio, dd, mm, aa;
 	
 	// não pode %e
 	
@@ -22,22 +22,22 @@ int main(int argc, char *argv[]) {
 	printf ("Digite seu valor total de vendas: ");
 	scanf ("%f", &vt);
 	total = (vt * 0.15) + sf;
-	printf ("Seu valor final é de %f", total);
+	printf ("Seu valor final é de %f \n", total);
 	//exercicio 5 digite 4 valores , exiba soma, media e produtorio
-	printf ("Digite o primeiro valor: ");
+	printf ("\n Digite o primeiro valor: ");
 	scanf ("%f", &a);
 	printf ("Digite o segundo valor: ");
 	scanf ("%f", &b);
 	printf ("Digite o terceiro valor: ");
 	scanf ("%f", &c);
-	printf ("Digite o quarto valor: ");
+	printf ("Digite o quarto valor: \n");
 	scanf ("%f", &d);
 	soma = a+b+c+d;
 	media = (a+b+c+d) / 2;
 	produtorio = a*b*c*d;
-	printf ("\nOs resultados sao soma: %f media: %f produtorio: %f ", soma, media, produtorio);
+	printf ("\n Os resultados sao soma: %f media: %f produtorio: %f \n ", soma, media, produtorio);
 	//exercicio 6 valor da idade em dias, meses e anos
-	printf ("Escreva sua idade: ");
+	printf ("\n Escreva sua idade: ");
 	scanf("%f", &idade);
 	aa = idade;
 	mm = idade*12 ;
