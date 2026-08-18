@@ -16,6 +16,7 @@ int main(int argc, char *argv[]) {
 	// não pode %e
 	
 	//Exercicio 4 
+
   //salario fixo e valor total em vendas 15% de comissão
 	printf ("Digite seu salario fixo: ");
 	scanf ("%f", &sf);
@@ -23,7 +24,9 @@ int main(int argc, char *argv[]) {
 	scanf ("%f", &vt);
 	total = (vt * 0.15) + sf;
 	printf ("Seu valor final é de %f \n", total);
+
 	//exercicio 5 digite 4 valores , exiba soma, media e produtorio
+
 	printf ("\n Digite o primeiro valor: ");
 	scanf ("%f", &a);
 	printf ("Digite o segundo valor: ");
@@ -36,13 +39,17 @@ int main(int argc, char *argv[]) {
 	media = (a+b+c+d) / 2;
 	produtorio = a*b*c*d;
 	printf ("\n Os resultados sao soma: %f media: %f produtorio: %f \n ", soma, media, produtorio);
+
 	//exercicio 6 valor da idade em dias, meses e anos
+
 	printf ("\n Escreva sua idade: ");
 	scanf("%f", &idade);
 	aa = idade;
 	mm = idade*12 ;
 	dd = idade*365;
 	printf ("Sua idade em dias: %f meses %f e anos %f",dd, mm, aa);
+
+
 	
 	
 	
