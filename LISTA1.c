@@ -40,6 +40,26 @@ int main(int argc, char *argv[]) {
 	b7 = n;
 	printf("Em binário: %d %d %d %d %d %d %d", b1, b2, b3, b4, b5, b6, b7);
 
+	//3 mas forma do professor
+	int n, resultado, bit64, bit32, bit16, bit8, bit4, bit2;
+	printf ("Escreva um valor pra conversão: ");
+	scanf ("%d",&n);
+	
+	bit64 = n%2;
+	resultado = n/2;
+	bit32 = resultado%2;
+	resultado = resultado/2;
+	bit16 = resultado%2;
+	resultado = resultado/2;
+	bit8 = resultado%2;
+	resultado = resultado/2;
+	bit4 = resultado%2;
+	resultado = resultado/2;
+	bit2 = resultado%2;
+	resultado = resultado/2;
+	printf ("O numero %d em binario = %d%d%d%d%d%d%d ", n, resultado%2, bit2, bit4, bit8, bit16, bit32, bit64);
+	
+
 	
 	//Exercicio 4 
 
