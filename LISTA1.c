@@ -95,7 +95,7 @@ int main(int argc, char *argv[]) {
 	dd = idade*365;
 	printf ("Sua idade em dias: %f meses %f e anos %f",dd, mm, aa);
 
-	/Exercício 7
+	//Exercício 7
 	
 	float raio, vol;
 	
