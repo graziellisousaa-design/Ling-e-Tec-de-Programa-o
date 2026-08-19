@@ -10,10 +10,44 @@ int main(int argc, char *argv[]) {
 	primeiro = segundo; //primeiro -> 5
 	segundo = aux;
 	printf("%d \n %d \n", primeiro, segundo);
-	//notação cientifica (2)
+
+	//EX2notação cientifica (2)
+
 	float valor, binario, sf, vt, total, a, b, c, d, idade, soma, media, produtorio, dd, mm, aa;
+	double valor1;
+	printf ("Primeiro valor: ");
+	scanf ("%lf", &valor1);
+	printf ("Valor em notação: %e", valor1);
+
+	//Exercício 3
+	printf("\nExercicio 3\n");
+	int n;
+	int b1, b2, b3, b4, b5,b6,b7;
+	printf("Digite um número: ");
+	scanf("%d", &n); //Confesso que quebrei a cabeça, mas entendi que podia aplicar o sistema de conversão em "escadinha" que o Cidão ensinou
 	
-	// não pode %e
+	b1 = n/64;
+	n = n % 64;
+	
+	b2 = n/32;
+	n = n % 32;
+	
+	b3 = n/16;
+	n = n %16;
+	
+	b4 = n/8;
+	n = n%8;
+	
+	b5 = n/4;
+	n = n%4;
+	
+	b6 = n/2;
+	n = n%2;
+	
+	b7 = n;
+	
+	printf("Em binário: %d %d %d %d %d %d %d", b1, b2, b3, b4, b5, b6, b7);
+
 	
 	//Exercicio 4 
 
@@ -48,6 +82,34 @@ int main(int argc, char *argv[]) {
 	mm = idade*12 ;
 	dd = idade*365;
 	printf ("Sua idade em dias: %f meses %f e anos %f",dd, mm, aa);
+
+	/Exercício 7
+	
+	float raio, vol;
+	
+	printf("Digite o raio: ");
+	scanf("%f", &raio);
+	
+	vol = (4.0/3) * pi * (raio *raio * raio); //Podia usar o pow, mas achei chato
+	
+	printf("O volume é: %f", vol);
+	
+	//Exercício 8
+
+	printf("\nExercício 8\n");	
+	float x1, y1, x2, y2, dist, dfinal;
+	
+	printf("Digite a coordenada do ponto 1 (eixo x e eixo y): ");
+	scanf("%f %f", &x1, &y1);
+		
+	printf("Digite a coordenada do ponto 2 (eixo x e eixo y): ");
+	scanf("%f %f", &x2, &y2);
+	
+	dist = (((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1)));//Poderia ter facilitado com o pow, mas quando percebi deu preguiça de mudar, fica difícil entender vendo, mas se executar o resultado é o mesmo ;)
+	
+	dfinal = sqrt(dist);
+	
+	printf("A distancia entre os pontos é: %.2f", dfinal);
 
 
 	
