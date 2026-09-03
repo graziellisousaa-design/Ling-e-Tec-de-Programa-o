@@ -66,6 +66,7 @@ printf ("\nEscreva o tempo em segundos do evento: ");
 scanf ("%d", &seg);
 min = seg / 60;
 horas = min / 60;
+seg = seg - ((horas*3600)+ (min*60));
 printf ("\nO tempo em segundos: %d minutos: %d e horas:%d ", seg, min, horas);
 
 //Exercicio 9
