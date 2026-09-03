@@ -1,5 +1,5 @@
 //LISTA DOIS, Exercicio 1
-  float ano, idade, atual, km, ms, real, dolar, cel, faren;
+  float ano, idade, atual, km, ms;
 printf ("Escreva a sua idade: ");
 	scanf("%f", &idade) ;
 printf ("Escreva o ano atual: ");
@@ -15,22 +15,25 @@ printf ("\n escreva a velocidade em km/h: ");
  printf ("\n Sua velocidade em metros por segundo e de: %f ", ms);
 
  //Exercicio 3
+float real, dolar, cotacao;
 
  printf ("\n Escreva quanto vc tem em reais: ");
  scanf ("%f", &real);
- dolar = real / 5.20;
+ printf ("\n Escreva qual a cotacao: ");
+ scanf ("%f", &cotacao);
+ dolar = real / cotacao;
  printf ("\n Voce tem um total de %f dolares", dolar);
 
  // exercicio 4
-
+ float cel, faren;
  printf ("\n  Digite sua temperatura em celsius: ");
  scanf ("%f", &cel);
-faren = cel * 1.8 + 32;
+ faren = cel * 1.8 + 32;
  printf ("\nSua temperatura em farenheit é de: %f", faren);
 
 // exercicio 5
 
-float ang, rad, p, suc, a, ant;
+float ang, rad, p;
 printf ("\nEscreva o angulo:  ");
 scanf ("%f", &ang);
 p = 3.1415;
@@ -38,7 +41,7 @@ rad = (ang)* p/ 180;
 printf ("\n O angulo em radiano fica: %f ", rad);
 
 //Exercicio 6 
-
+float a, ant, suc;
 printf ("\nEscreva um numero inteiro: ");
 scanf ("%f", &a);
 suc = a + 1;
