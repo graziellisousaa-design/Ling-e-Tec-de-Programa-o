@@ -1,0 +1,31 @@
+float calc_inss (float salario)
+{
+	if (salario <= 1412.00)return salario*0.075;
+	else if (salario <= 2666.68)return salario*0.09;
+	else if (salario <= 4000.00)return salario*0.12;
+	else return salario *0.14;
+}
+float calc_irpf (float salario)
+{
+	if (salario <= 2259.20 ) return salario;
+	else if (salario <= 2826.65) return salario*0.075;
+	else if (salario <= 3751.05) return salario*0.15;
+	else if (salario <= 4664.68) return salario*0.225;
+	else return salario*0.275;
+	
+}	
+	
+int main(int argc, char *argv[]) {
+	float salario, desconto1, desconto2;
+	scanf ("%f", &salario);
+	desconto1 = calc_inss(salario);
+	printf ("%f // %f", desconto1, calc_inss(salario));
+   //EXERCICIO 8
+	//(Salário Base * Alíquota) - Dedução 
+  
+	desconto2 = calc_irpf(salario) + desconto1;
+	salario -= desconto2 ;
+	printf ("\n%f // %f", desconto2, salario);
+	
+	return 0;
+}
