@@ -18,5 +18,10 @@ int main(int argc, char *argv[]) {
 	resto2 = soma%11;
 	if (resto2 == 10) resto = 0;	
 	printf ("\n%d", resto2);	
+	if (resto == n10 && resto2 == n11)
+	{ printf ("\nCPF valido");
+		} else {
+		printf ("\n cpf invalido");
+			}
 	return 0;
 }
