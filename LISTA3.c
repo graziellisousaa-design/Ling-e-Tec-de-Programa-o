@@ -26,6 +26,9 @@ int main(int argc, char *argv[]) {
 	desconto2 = calc_irpf(salario) + desconto1;
 	salario -= desconto2 ;
 	printf ("\n%f // %f", desconto2, salario);
+	//EX9
+
+
 	
 	return 0;
 }
