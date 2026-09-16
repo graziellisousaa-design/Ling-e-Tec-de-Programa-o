@@ -113,6 +113,36 @@ printf ("O valor %.2f farenheints em celsius fica: %.2f Celsius", temperatura, r
 printf ("Escala invalida, digite C para celsius ou F para farenheints");
  	
  }
+	//03
+
+	
+float nota1, nota2, nota3, media, faltam, total;
+char nome[50];
+
+printf("Digite o nome do aluno(a): ");
+scanf(" %s", nome);
+
+printf("Digite sua primeira nota: ");
+scanf(" %f", &nota1);
+
+printf("Digite sua segunda nota: ");
+scanf(" %f", &nota2;
+
+printf("Digite sua terceira nota: ");
+scanf(" %f", &nota3);
+
+media = (nota1 + nota2+ nota3) / 3;
+
+faltam = 10 - media;
+
+if (media < 4.0) {
+    printf("\033[0;31mVocê está REPROVADO!\033[0m");
+} else if (media >= 4.0 && media < 7.0) {
+    printf("\033[0;32mEXAME!, Falta %.2f para atingir 10\033[0m", faltam);
+} else if (media >= 7.0 && media <= 10.0) {
+    printf("\033[0;34mVocê está APROVADO!\033[0m");
+}
+
 	
 	return 0;
 }
