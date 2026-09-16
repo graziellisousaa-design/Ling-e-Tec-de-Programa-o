@@ -94,7 +94,25 @@ int main(int argc, char *argv[]) {
     resto = resto % 1;
     printf("Valor solicitado: R$ %d\n", valor);
     printf ("Para obter esse valor serão necessarios,\n %d notas de 100,\n %d notas de 50,\n %d notas de 10,\n %d notas de 5,\n %d notas de 2 \n %d notas de 1",qtd100, qtd50, qtd10, qtd5, qtd2, qtd1);
-    
+    //EX02
+	 float temperatura, resultado;
+ char escala;
+ printf ("Digite a temperatura: ");
+ scanf ("%f", &temperatura);
+ printf ("Digite a escala, C para celsius e F para farenheints: ");
+ scanf ( " %c", &escala);
+ if (escala == 'C' || escala == 'c') { 
+ resultado = (temperatura * 9.0/5.0) + 32;
+ printf ("A temperatura %.2f em Celsius equivalem a %.2f Farenheints", temperatura, resultado);
+ }
+ else if (escala == 'f' || escala == 'F'){
+resultado = (temperatura - 32) * 5.0/9.0;
+printf ("O valor %.2f farenheints em celsius fica: %.2f Celsius", temperatura, resultado);
+ }
+ else {
+printf ("Escala invalida, digite C para celsius ou F para farenheints");
+ 	
+ }
 	
 	return 0;
 }
