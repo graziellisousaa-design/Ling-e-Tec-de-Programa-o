@@ -275,7 +275,7 @@ void exercicio7 (){
 
 }
 
-void ex8 (){
+void exercicio8 (){
 	float peso, altura, imc;
 
     printf("Digite seu peso em kg: ");
@@ -302,7 +302,7 @@ void ex8 (){
     }
 }
 
-void ex9 (){
+void exercicio9 (){
 	    int A = 6;
     int B = 0;
     int C = 0;
@@ -354,39 +354,39 @@ int main(int argc, char *argv[]) {
 	switch(op){
 
    case 1:
-         ex1();
+         exercicio1();
     break;
 
     case 2:
-        ex2();
+        exercicio2();
       break;
 
 	case 3:
-         ex3();
+         exercicio3();
      break;
      	
 	case 4:
-         ex4();
+         exercicio4();
      break;
     
     case 5:
-         ex5();
+         exercicio5();
      break;
      
     case 6:
-         ex6();
+         exercicio6();
      break;
      
     case 7:
-         ex7();
+         exercicio7();
      break;
     	
 	case 8:
-         ex8();
+         exercicio8();
      break;
     
     case 9:
-         ex9();
+         exercicio9();
      break;
     
     
