@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 
 /* leia um valor par e mostre sua raiz */
 
@@ -36,7 +34,24 @@ do {
     printf ("a raiz de %d = %f", valor, sqrt(valor));
 */	
 	
-	
+/* Elabore um programa que peça ao usuario para digitar 10 numeros que sejam inteiros positivos e ignore os negativos.
+ E mostre na tela o resultado da soma e a média desses valores
+ --OBS: não precisa usar vetor, usem os laços da aula de hoje
+ while e do-while  */
+
+int main(int argc, char *argv[]) {
+	int n, i, soma; 
+	i=0;
+	soma =0;
+	while (i<10){	
+	 	scanf ("%d", &n);
+	 	if(n>0){
+		
+	 		soma += n;
+	 		i++;
+	 	}
+}
+	printf ("Soma = %d e media = %d", soma, (soma/10));
 	
 	return 0;
 }
