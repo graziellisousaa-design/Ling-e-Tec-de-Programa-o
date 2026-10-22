@@ -9,7 +9,11 @@ int main(int argc, char *argv[]) {
 	printf ("\n Tamanho da minha palavra eh %d", i);
 	for (j=i-1, i=0; i<j; i++, j--) {
 		if (palavra[i] == palavra[j]) palindromo = 1;
-			else palindromo = 0;
+			else {
+			palindromo = 0;
+			printf ("\n %d | %d", i, j);
+			break;
+		}
 		}
 	if (palindromo) printf ("\n Eh palindromo");
 	else printf  ("\n nao eh palindromo");
